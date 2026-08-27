@@ -1372,8 +1372,9 @@ h3 {
     }
 
     .project-row {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
 
     .research-items article {
         grid-template-columns: 1fr;
@@ -1494,6 +1495,10 @@ h3 {
     .dimensions {
         grid-template-columns: 1fr;
     }
+
+   .project-row {
+    grid-template-columns: 1fr;
+}
 
     .progress {
         font-size: 0.52rem;
