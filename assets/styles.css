@@ -1620,3 +1620,10 @@ h3 {
 
     gap: 16px;
 }
+
+.femmunity-projects .progress > span {
+    font-size: 0.78rem !important;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+}
