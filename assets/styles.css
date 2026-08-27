@@ -26,12 +26,15 @@
     transform: translateY(-2px);
 }
 .femmunity-title {
-    color: #151515; /* black */
+    color: #151515;
 }
 
 .purple-x {
     color: #7440df;
-    font-size: 0.85em;
-    position: relative;
-    top: -0.15em;
+    font-size: 1.55em;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 0;
+    margin-left: 1px;
+    transform: translateY(-2px);
 }
