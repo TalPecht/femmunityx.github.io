@@ -1181,16 +1181,15 @@ h3 {
 
     /* FOOTER */
 
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+.footer {
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
 
-    .footer .footer-logo-line {
-        width: 500px;
-        max-width: 100%;
-        height: auto;
-    }
+.footer .footer-logo-line {
+    width: 650px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* =========================================================
@@ -1311,32 +1310,13 @@ h3 {
 
     /* FOOTER */
 
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .footer .footer-logo-line {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
-    }
+.footer {
+    grid-template-columns: 1fr;
+    gap: 18px;
 }
 
-    /* -------------------------
-       FOOTER + MERGED LOGOS
-       ------------------------- */
-
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .footer .footer-logo-line {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
-        object-fit: contain;
-        object-position: left center;
-    }
+.footer .footer-logo-line {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
 }
