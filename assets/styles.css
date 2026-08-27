@@ -239,19 +239,35 @@ h3 {
    HERO — MAPPING FEMALE IMMUNITY
    ========================================================= */
 
+
+/* ---------------------------------------------------------
+   MAIN MAP CONTAINER
+   --------------------------------------------------------- */
+
 .map {
     height: 550px;
     position: relative;
+
     border-radius: 30px;
+
     background: #ebe9e3;
+
     overflow: hidden;
+
+    /* Creates a clean stacking context */
+    isolation: isolate;
 }
 
-/* Moving purple glow */
+
+/* ---------------------------------------------------------
+   MOVING PURPLE GLOW
+   --------------------------------------------------------- */
+
 .map::before {
     content: "";
 
     position: absolute;
+
     width: 70%;
     height: 70%;
 
@@ -263,17 +279,55 @@ h3 {
     background: radial-gradient(
         circle,
         rgba(116, 64, 223, 0.22) 0%,
-        rgba(116, 64, 223, 0.12) 35%,
-        rgba(116, 64, 223, 0.05) 55%,
-        transparent 72%
+        rgba(116, 64, 223, 0.14) 30%,
+        rgba(116, 64, 223, 0.07) 50%,
+        rgba(116, 64, 223, 0.03) 62%,
+        transparent 75%
     );
 
-    filter: blur(18px);
+    filter: blur(20px);
 
-    animation: movePurpleGlow 14s ease-in-out infinite alternate;
+    z-index: 0;
 
     pointer-events: none;
+
+    animation: movePurpleGlow 16s ease-in-out infinite;
 }
+
+
+/* Purple glow movement */
+
+@keyframes movePurpleGlow {
+
+    0% {
+        transform: translate(-18%, -12%) scale(1);
+    }
+
+    20% {
+        transform: translate(12%, -15%) scale(1.06);
+    }
+
+    40% {
+        transform: translate(22%, 8%) scale(1);
+    }
+
+    60% {
+        transform: translate(10%, 22%) scale(1.08);
+    }
+
+    80% {
+        transform: translate(-20%, 15%) scale(1.03);
+    }
+
+    100% {
+        transform: translate(-18%, -12%) scale(1);
+    }
+}
+
+
+/* ---------------------------------------------------------
+   CONCENTRIC RINGS
+   --------------------------------------------------------- */
 
 .ring {
     position: absolute;
@@ -285,6 +339,8 @@ h3 {
 
     border: 1px solid rgba(116, 64, 223, 0.18);
     border-radius: 50%;
+
+    z-index: 1;
 }
 
 .r1 {
@@ -302,30 +358,53 @@ h3 {
     aspect-ratio: 1;
 }
 
+
+/* ---------------------------------------------------------
+   SWIRLY LINES + DOTS
+   --------------------------------------------------------- */
+
 .map svg {
     position: absolute;
+
     inset: 0;
 
     width: 100%;
     height: 100%;
+
+    z-index: 2;
+
+    pointer-events: none;
 }
 
 .curve {
     fill: none;
+
     stroke: rgba(116, 64, 223, 0.25);
+
     stroke-width: 2;
 }
 
 .curve.b {
     stroke: rgba(20, 20, 20, 0.12);
+
     stroke-width: 1.4;
 }
 
+
+/* Purple outlined dots */
+
 .map svg circle {
     fill: var(--bg);
+
     stroke: var(--violet);
+
     stroke-width: 2;
 }
+
+
+/* ---------------------------------------------------------
+   CENTRAL CIRCLE
+   --------------------------------------------------------- */
 
 .core {
     position: absolute;
@@ -347,16 +426,30 @@ h3 {
     place-content: center;
 
     text-align: center;
+
+    z-index: 4;
 }
 
 .core small {
     font-size: 0.62rem;
+
     letter-spacing: 0.16em;
+
+    line-height: 1.2;
+
+    margin-bottom: 6px;
 }
 
 .core strong {
     font-size: 1.05rem;
+
+    line-height: 1.25;
 }
+
+
+/* ---------------------------------------------------------
+   FACTOR LABELS
+   --------------------------------------------------------- */
 
 .node {
     position: absolute;
@@ -364,39 +457,70 @@ h3 {
     background: rgba(255, 255, 255, 0.95);
 
     border: 1px solid rgba(0, 0, 0, 0.08);
+
     border-radius: 999px;
 
     padding: 9px 14px;
 
     font-size: 0.82rem;
     font-weight: 600;
+
+    z-index: 4;
 }
+
+
+/* Hormones */
 
 .n1 {
     left: 8%;
     top: 17%;
 }
 
+
+/* Metabolism */
+
 .n2 {
     right: 6%;
     top: 23%;
 }
+
+
+/* Environment */
 
 .n3 {
     left: 6%;
     bottom: 17%;
 }
 
+
+/* Time */
+
 .n4 {
     right: 17%;
     bottom: 12%;
 }
+
+
+/* Tissue */
 
 .n5 {
     right: 2%;
     top: 52%;
 }
 
+
+/* ---------------------------------------------------------
+   ACCESSIBILITY — REDUCE MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .map::before {
+        animation: none;
+
+        transform: translate(0, 10%) scale(1.05);
+    }
+}
 
 /* =========================================================
    VISION
