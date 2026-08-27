@@ -1028,25 +1028,17 @@ h3 {
    FOOTER
    ========================================================= */
 
-/*
-   IMPORTANT:
-   This controls ONLY the original FemmunityX footer logo.
-   It does not affect the large combined logo row at the top.
-*/
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
 .footer {
-    padding: 45px 0;
+    padding: 50px 0;
 
     border-top: 1px solid var(--line);
 
     display: grid;
-    grid-template-columns: 1fr auto auto;
 
-    gap: 30px;
+    /* Give the logo most of the available space */
+    grid-template-columns: minmax(0, 1fr) auto auto;
+
+    gap: 35px;
 
     align-items: center;
 
@@ -1055,12 +1047,12 @@ h3 {
 }
 
 
-/* Merged institutional logo line */
+/* Large merged institutional logo line */
 
 .footer .footer-logo-line {
     display: block;
 
-    width: 520px;
+    width: 700px;
     max-width: 100%;
 
     height: auto;
@@ -1068,7 +1060,6 @@ h3 {
     object-fit: contain;
     object-position: left center;
 }
-
 
 /* =========================================================
    TABLET
