@@ -1,10 +1,248 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FemmunityX — Mapping the Dynamics of Female Immunity</title>
+  <meta name="description" content="FemmunityX studies how hormonal, metabolic and environmental states shape human immune variation.">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <h1>Hello 👋</h1>
-  <p>This is my first website!</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FemmunityX home">Femmunity<span>X</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#study">Femmunity Study</a>
+      <a href="#people">People</a>
+      <a href="#publications">Publications</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">FemmunityX · Bonn</p>
+        <h1>Mapping the dynamics of female immunity.</h1>
+        <p class="lede">
+          We investigate how hormonal, metabolic and environmental states shape the human immune system —
+          and how these dynamics contribute to variation in health and disease.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#research">Explore our research</a>
+          <a class="button secondary" href="#people">Meet the team</a>
+        </div>
+      </div>
+
+      <div class="hero-graphic" aria-label="Conceptual immune-endocrine-metabolic systems diagram">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="node node-main">IMMUNE<br>STATE</div>
+        <div class="node node-1">Hormones</div>
+        <div class="node node-2">Metabolism</div>
+        <div class="node node-3">Environment</div>
+        <div class="node node-4">Time</div>
+      </div>
+    </section>
+
+    <section class="statement section">
+      <p class="eyebrow">Our perspective</p>
+      <h2>Female immunity is not a fixed baseline.</h2>
+      <p>
+        We study the immune system as a dynamic biological system shaped by endocrine state, metabolism,
+        reproductive context and environment. Our work combines longitudinal human studies, multi-omics
+        and computational analysis to understand immune variation across time and between individuals.
+      </p>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Three connected research programs</h2>
+        <p>Distinct projects, one overarching question: what shapes human immune variation?</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>The Femmunity Study</h3>
+          <p>
+            A longitudinal study of immune variation across hormonal and reproductive states, integrating
+            immune phenotyping with endocrine, metabolic and other physiological measurements.
+          </p>
+          <a href="#study">Explore the study →</a>
+        </article>
+
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>TransMic / TransInf</h3>
+          <p>
+            We investigate how nutritional and metabolic transitions interact with immunity, the microbiome
+            and population context, including sex-associated differences in immune responses.
+          </p>
+          <a href="#transmic">Read more →</a>
+        </article>
+
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>InformatYX</h3>
+          <p>
+            We develop computational approaches for integrating sex, hormonal, metabolic and population-level
+            variables into systems immunology analyses.
+          </p>
+          <a href="#informatyx">Read more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="study" class="section feature">
+      <div>
+        <p class="eyebrow">Flagship project</p>
+        <h2>The Femmunity Study</h2>
+        <p class="feature-text">
+          How does the immune system change across hormonal states? We use longitudinal sampling to map
+          within-person immune variation and connect those trajectories to endocrine and metabolic dynamics.
+        </p>
+        <div class="tags">
+          <span>Longitudinal cohorts</span>
+          <span>Immunophenotyping</span>
+          <span>Hormonal profiling</span>
+          <span>Multi-omics</span>
+          <span>Computational modeling</span>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div><strong>01</strong><span>Repeated sampling</span></div>
+        <div><strong>02</strong><span>Immune + endocrine profiling</span></div>
+        <div><strong>03</strong><span>Multi-omic integration</span></div>
+        <div><strong>04</strong><span>Dynamic immune trajectories</span></div>
+      </div>
+    </section>
+
+    <section id="transmic" class="section split">
+      <div>
+        <p class="eyebrow">Population systems immunology</p>
+        <h2>TransMic / TransInf</h2>
+      </div>
+      <div>
+        <p>
+          These projects examine how nutrition, metabolism, microbiome composition and environmental context
+          shape immune states across populations. FemmunityX focuses especially on sex-associated and
+          physiology-associated differences within these systems.
+        </p>
+      </div>
+    </section>
+
+    <section id="informatyx" class="section split">
+      <div>
+        <p class="eyebrow">Computational framework</p>
+        <h2>InformatYX</h2>
+      </div>
+      <div>
+        <p>
+          InformatYX is our developing computational framework for physiology-aware immune analysis.
+          It connects immune measurements with hormonal, metabolic, demographic and population variables
+          to identify dynamic signatures that standard cross-sectional analyses can miss.
+        </p>
+      </div>
+    </section>
+
+    <section class="section methods">
+      <div class="section-heading">
+        <p class="eyebrow">Approach</p>
+        <h2>From human physiology to systems-level insight</h2>
+      </div>
+
+      <div class="method-grid">
+        <div><span>01</span><h3>Human cohorts</h3><p>Longitudinal and population-based study designs.</p></div>
+        <div><span>02</span><h3>Immune profiling</h3><p>Cellular and functional characterization of immune states.</p></div>
+        <div><span>03</span><h3>Multi-omics</h3><p>Integration of transcriptomic, metabolic and other molecular layers.</p></div>
+        <div><span>04</span><h3>Computation</h3><p>Longitudinal modeling, multi-omic integration and systems analysis.</p></div>
+      </div>
+    </section>
+
+    <section id="people" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">People</p>
+        <h2>Meet FemmunityX</h2>
+        <p>Replace these placeholders with portraits, roles and short scientific identities.</p>
+      </div>
+
+      <div class="people-grid">
+        <article class="person">
+          <div class="portrait placeholder">TP</div>
+          <h3>Tal Pecht, PhD</h3>
+          <p class="role">Principal Investigator</p>
+          <p>Systems immunology · Female health · Immunometabolism · Multi-omics</p>
+        </article>
+        <article class="person">
+          <div class="portrait placeholder">+</div>
+          <h3>Team member</h3>
+          <p class="role">Role / degree</p>
+          <p>One-line description of their scientific focus.</p>
+        </article>
+        <article class="person">
+          <div class="portrait placeholder">+</div>
+          <h3>Team member</h3>
+          <p class="role">Role / degree</p>
+          <p>One-line description of their scientific focus.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section publications">
+      <div class="section-heading">
+        <p class="eyebrow">Selected science</p>
+        <h2>Publications</h2>
+      </div>
+
+      <article class="publication">
+        <p class="pub-meta">Journal · Year</p>
+        <h3>Add your most representative FemmunityX paper here</h3>
+        <p>
+          Add one sentence explaining the biological significance of the paper rather than only listing the citation.
+        </p>
+        <a href="#">Paper ↗</a>
+      </article>
+
+      <article class="publication">
+        <p class="pub-meta">Journal · Year</p>
+        <h3>Add another key paper or preprint</h3>
+        <p>
+          Connect publications to the research program they support and link to data or code where possible.
+        </p>
+        <a href="#">Paper ↗</a>
+      </article>
+    </section>
+
+    <section id="join" class="section join">
+      <p class="eyebrow">Join FemmunityX</p>
+      <h2>We welcome researchers interested in human immunology, systems biology and computational science.</h2>
+      <p>
+        Add current openings here, or invite prospective MSc students, PhD candidates, postdocs and fellowship applicants
+        to contact the group.
+      </p>
+      <a class="button primary" href="mailto:your-email@uni-bonn.de">Get in touch</a>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <a class="brand" href="#top">Femmunity<span>X</span></a>
+      <p>Bonn, Germany</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:your-email@uni-bonn.de">Email</a>
+      <a href="#">University profile</a>
+      <a href="#">Google Scholar</a>
+      <a href="#">ORCID</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> FemmunityX</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
