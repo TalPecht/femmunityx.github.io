@@ -30,5 +30,8 @@
 }
 
 .purple-x {
-    color: #7440df; /* purple */
+    color: #7440df;
+    font-size: 0.85em;
+    position: relative;
+    top: -0.15em;
 }
