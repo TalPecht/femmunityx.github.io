@@ -242,18 +242,37 @@ h3 {
 .map {
     height: 550px;
     position: relative;
-
     border-radius: 30px;
-
-    background:
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(116, 64, 223, 0.19),
-            transparent 28%
-        ),
-        #ebe9e3;
-
+    background: #ebe9e3;
     overflow: hidden;
+}
+
+/* Moving purple glow */
+.map::before {
+    content: "";
+
+    position: absolute;
+    width: 70%;
+    height: 70%;
+
+    left: 15%;
+    top: 15%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(116, 64, 223, 0.22) 0%,
+        rgba(116, 64, 223, 0.12) 35%,
+        rgba(116, 64, 223, 0.05) 55%,
+        transparent 72%
+    );
+
+    filter: blur(18px);
+
+    animation: movePurpleGlow 14s ease-in-out infinite alternate;
+
+    pointer-events: none;
 }
 
 .ring {
