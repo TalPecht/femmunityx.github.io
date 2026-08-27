@@ -38,3 +38,11 @@
     margin-left: 1px;
     transform: translateY(-2px);
 }
+
+.group-logo .top-logo-row {
+    width: 500px;
+    max-width: 50vw;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
