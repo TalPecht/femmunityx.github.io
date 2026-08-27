@@ -712,7 +712,7 @@ h3 {
 
     column-gap: 22px;
 
-    margin: 75px auto 28px;
+    margin: 75px 0 28px;
 
     font-size: 0.64rem;
     font-weight: 600;
@@ -743,7 +743,7 @@ h3 {
 }
 
 
-/* Main horizontal line */
+/* Colored horizontal line */
 
 .progress > div::before {
     content: "";
@@ -756,18 +756,18 @@ h3 {
 
     height: 2px;
 
+    transform: translateY(-50%);
+
     background: linear-gradient(
         90deg,
         #e78b00 0%,
         #d96672 50%,
         #7440df 100%
     );
-
-    transform: translateY(-50%);
 }
 
 
-/* Three project points */
+/* Project points */
 
 .progress i {
     position: relative;
@@ -784,9 +784,6 @@ h3 {
     border-radius: 50%;
 }
 
-
-/* Individual project colors */
-
 .progress i:nth-child(1) {
     border-color: #e78b00;
 }
@@ -799,13 +796,16 @@ h3 {
     border-color: #7440df;
 }
 
+
 /* =========================================================
    FEMMUNITY PROJECTS
    ========================================================= */
 
 .project-row {
+    width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
     gap: 16px;
 }
