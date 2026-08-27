@@ -25,3 +25,10 @@
     background: var(--deep);
     transform: translateY(-2px);
 }
+.femmunity-title {
+    color: #151515; /* black */
+}
+
+.purple-x {
+    color: #7440df; /* purple */
+}
