@@ -1570,3 +1570,53 @@ h3 {
     height: auto;
 }
 }
+
+/* =========================================================
+   FIX FEMMUNITY PROJECT LAYOUT
+   ========================================================= */
+
+.femmunity-projects {
+    width: 100% !important;
+    display: block !important;
+    grid-column: 1 / -1 !important;
+    clear: both !important;
+    margin-top: 70px;
+}
+
+.femmunity-projects .progress {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    margin: 0 0 32px 0 !important;
+}
+
+.femmunity-projects .progress > span {
+    white-space: nowrap;
+    flex: 0 0 auto;
+}
+
+.femmunity-projects .progress > div {
+    position: relative;
+
+    width: 420px;
+    max-width: 45vw;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.femmunity-projects .project-row {
+    width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 16px;
+}
