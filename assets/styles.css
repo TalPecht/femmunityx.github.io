@@ -701,18 +701,15 @@ h3 {
 /* =========================================================
    FEMMUNITY — CIRCULATION TO TISSUE
    ========================================================= */
-
 .progress {
     width: 100%;
+    margin: 70px 0 28px;
 
-    display: grid;
-    grid-template-columns: auto minmax(280px, 520px) auto;
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    column-gap: 22px;
-
-    margin: 75px 0 28px;
+    gap: 22px;
 
     font-size: 0.64rem;
     font-weight: 600;
@@ -722,20 +719,22 @@ h3 {
 }
 
 
-/* Labels */
+/* LEFT + RIGHT LABELS */
 
 .progress > span {
+    flex: 0 0 auto;
     white-space: nowrap;
 }
 
 
-/* Journey line */
+/* CENTRAL JOURNEY LINE */
 
 .progress > div {
     position: relative;
 
-    width: 100%;
-    height: 20px;
+    flex: 1 1 auto;
+    max-width: 520px;
+    height: 22px;
 
     display: flex;
     align-items: center;
@@ -743,7 +742,7 @@ h3 {
 }
 
 
-/* Colored horizontal line */
+/* COLORED LINE */
 
 .progress > div::before {
     content: "";
@@ -767,7 +766,7 @@ h3 {
 }
 
 
-/* Project points */
+/* THREE PROJECT DOTS */
 
 .progress i {
     position: relative;
@@ -1371,6 +1370,15 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
     }
 
+   .progress {
+    margin-top: 55px;
+    gap: 14px;
+}
+
+.progress > div {
+    max-width: 360px;
+}
+
     .project-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
@@ -1501,12 +1509,21 @@ h3 {
 }
 
     .progress {
-        font-size: 0.52rem;
-    }
+    margin: 45px 0 24px;
+    gap: 9px;
 
-    .progress span {
-        max-width: 90px;
-    }
+    font-size: 0.5rem;
+    letter-spacing: 0.09em;
+}
+
+.progress > span {
+    white-space: nowrap;
+}
+
+.progress > div {
+    min-width: 100px;
+    max-width: none;
+}
 
     .method-line {
         grid-template-columns: 1fr;
