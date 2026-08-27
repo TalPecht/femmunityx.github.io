@@ -141,6 +141,43 @@ a {
     cursor: pointer;
 }
 
+/* =========================================================
+   LANGUAGE SWITCH
+   ========================================================= */
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-left: 16px;
+    padding-left: 16px;
+
+    border-left: 1px solid var(--line);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.language-switch a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.language-switch a:hover {
+    color: var(--violet);
+}
+
+.language-switch a.active {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.language-switch span {
+    color: var(--line);
+}
+
 
 
 /* =========================================================
