@@ -48,26 +48,25 @@ a {
     margin: auto;
 }
 
-
 /* =========================================================
-   STICKY HEADER
+   HEADER + NAVIGATION
    ========================================================= */
 
 .header {
     width: 100%;
-    height: 92px;
+    height: 82px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 max(20px, calc((100% - 1160px) / 2));
+    padding: 0 max(20px, calc((100% - var(--max)) / 2));
 
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background: rgba(246, 245, 241, 0.95);
+    background: rgba(246, 245, 241, 0.96);
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -76,51 +75,72 @@ a {
 }
 
 
-/* =========================================================
-   TOP FEMMUNITYX LOGO
-   ========================================================= */
+/* FemmunityX logo */
 
 .group-logo {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
-    height: 70px;
+
+    flex: 0 0 auto;
+
+    text-decoration: none;
 }
 
-.group-logo .top-femmunityx-logo {
+.group-logo img {
     display: block;
+
     width: auto;
-    height: 40px;
-    max-width: 190px;
+    height: 36px;
+
+    max-width: 150px;
+
     object-fit: contain;
-    object-position: left center;
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* Navigation */
 
 .header nav {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 28px;
+
+    margin-left: auto;
 }
 
 .header nav a {
     text-decoration: none;
-    font-size: 0.9rem;
+
+    font-size: 0.88rem;
+    font-weight: 500;
+
+    color: var(--ink);
+
+    transition: color 0.2s ease;
 }
 
 .header nav a:hover {
     color: var(--violet);
 }
 
+
+/* Mobile menu button */
+
 .menu {
     display: none;
+
     border: 0;
-    background: none;
-    font: inherit;
+    background: transparent;
+
+    color: var(--ink);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    cursor: pointer;
 }
+
 
 
 /* =========================================================
@@ -1056,38 +1076,23 @@ h3 {
 
 @media (max-width: 880px) {
 
-    /* -------------------------
-       HEADER
-       ------------------------- */
+    /* HEADER */
 
     .header {
-        height: 78px;
+        height: 76px;
     }
 
-    /* FemmunityX logo at top */
-
-    .group-logo {
-        height: 60px;
-        display: flex;
-        align-items: center;
-    }
-
-    .group-logo .top-femmunityx-logo {
-        display: block;
-        width: auto;
-        height: 44px;
-        max-width: 175px;
-        object-fit: contain;
-        object-position: left center;
+    .group-logo img {
+        height: 34px;
+        max-width: 145px;
     }
 
 
-    /* -------------------------
-       NAVIGATION
-       ------------------------- */
+    /* NAVIGATION */
 
     .menu {
         display: block;
+        margin-left: auto;
     }
 
     .header nav {
@@ -1095,28 +1100,38 @@ h3 {
 
         position: absolute;
 
-        top: 78px;
+        top: 76px;
         left: 20px;
         right: 20px;
 
-        background: var(--bg);
+        margin: 0;
 
-        padding: 18px;
+        padding: 20px;
+
+        background: rgba(246, 245, 241, 0.98);
 
         border: 1px solid var(--line);
         border-radius: 15px;
 
         flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
     }
 
     .header nav.open {
         display: flex;
     }
 
+    .header nav a {
+        width: 100%;
+        font-size: 0.95rem;
+    }
 
-    /* -------------------------
-       MAIN LAYOUT
-       ------------------------- */
+
+    /* MAIN LAYOUT */
 
     .hero,
     .vision-grid,
@@ -1153,9 +1168,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       PEOPLE
-       ------------------------- */
+    /* PEOPLE */
 
     .people-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1163,9 +1176,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       FEMMUNITY LOGO
-       ------------------------- */
+    /* FEMMUNITY STUDY LOGO */
 
     .fem-logo {
         height: 120px;
@@ -1177,9 +1188,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       FOOTER + MERGED LOGOS
-       ------------------------- */
+    /* FOOTER */
 
     .footer {
         grid-template-columns: 1fr;
@@ -1187,14 +1196,11 @@ h3 {
     }
 
     .footer .footer-logo-line {
-        width: 520px;
+        width: 500px;
         max-width: 100%;
         height: auto;
-        object-fit: contain;
-        object-position: left center;
     }
 }
-
 
 /* =========================================================
    PHONE
@@ -1207,36 +1213,29 @@ h3 {
     }
 
 
-    /* -------------------------
-       HEADER
-       ------------------------- */
+    /* HEADER */
 
     .header {
-        height: 72px;
+        height: 68px;
 
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
-    /* FemmunityX logo at top */
-
-    .group-logo {
-        height: 55px;
+    .group-logo img {
+        height: 31px;
+        max-width: 135px;
     }
 
-    .group-logo .top-femmunityx-logo {
-        display: block;
-        width: auto;
-        height: 40px;
-        max-width: 155px;
-        object-fit: contain;
-        object-position: left center;
+    .header nav {
+        top: 68px;
+
+        left: 12px;
+        right: 12px;
     }
 
 
-    /* -------------------------
-       HERO
-       ------------------------- */
+    /* HERO */
 
     .hero h1 {
         font-size: 3.65rem;
@@ -1261,9 +1260,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       SECTIONS
-       ------------------------- */
+    /* SECTIONS */
 
     .vision,
     .framework,
@@ -1294,9 +1291,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       PEOPLE
-       ------------------------- */
+    /* PEOPLE */
 
     .people-grid {
         grid-template-columns: 1fr;
@@ -1308,9 +1303,7 @@ h3 {
     }
 
 
-    /* -------------------------
-       FEMMUNITY LOGO
-       ------------------------- */
+    /* FEMMUNITY STUDY LOGO */
 
     .fem-logo {
         height: 110px;
@@ -1318,14 +1311,26 @@ h3 {
     }
 
 
-    /* -------------------------
-       JOIN SECTION
-       ------------------------- */
+    /* JOIN */
 
     .join {
         padding: 42px 24px;
     }
 
+
+    /* FOOTER */
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .footer .footer-logo-line {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
+}
 
     /* -------------------------
        FOOTER + MERGED LOGOS
