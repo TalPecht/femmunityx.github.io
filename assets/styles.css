@@ -681,6 +681,22 @@ h3 {
     transform: translateY(-2px);
 }
 
+.femmunity-phone {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.femmunity-phone a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.femmunity-phone a:hover {
+    color: var(--violet);
+}
+
 
 /* =========================================================
    FEMMUNITY PROGRESSION
