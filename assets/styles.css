@@ -1295,8 +1295,8 @@ h3 {
 
     display: grid;
 
-    /* Give the logo most of the available space */
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    /* Give the logos enough actual space */
+    grid-template-columns: 180px 1fr auto;
 
     gap: 35px;
 
@@ -1307,13 +1307,13 @@ h3 {
 }
 
 
-/* Large merged institutional logo line */
+/* Institutional logos */
 
 .footer .footer-logo-line {
     display: block;
 
-    width: 700px;
-    max-width: 100%;
+    width: 170px;
+    max-width: none;
 
     height: auto;
 
