@@ -1288,7 +1288,7 @@ h3 {
    FOOTER
    ========================================================= */
 
-..footer {
+.footer {
     padding: 50px 0;
     border-top: 1px solid var(--line);
 
@@ -1302,12 +1302,12 @@ h3 {
 }
 
 
-/* Footer logo group */
+/* Footer logos */
 
 .footer-logos {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
     flex-shrink: 0;
 }
 
@@ -1469,12 +1469,30 @@ h3 {
 .footer {
     grid-template-columns: 1fr;
     gap: 22px;
+    align-items: start;
 }
 
-.footer .footer-logo-line {
-    width: 260px;
-    max-width: 100%;
-    height: auto;
+.footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logos .logo-femmunity {
+    height: 40px;
+}
+
+.footer-logos .logo-dzne {
+    height: 40px;
+}
+
+.footer-logos .logo-bonn {
+    height: 36px;
+}
+
+.footer-logos .logo-immuno {
+    height: 40px;
 }
 
 }
@@ -1612,13 +1630,30 @@ h3 {
 
 .footer {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 20px;
 }
 
-.footer .footer-logo-line {
-    width: 260px;
-    max-width: 100%;
-    height: auto;
+.footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-logos .logo-femmunity {
+    height: 34px;
+}
+
+.footer-logos .logo-dzne {
+    height: 34px;
+}
+
+.footer-logos .logo-bonn {
+    height: 31px;
+}
+
+.footer-logos .logo-immuno {
+    height: 34px;
 }
 }
 
