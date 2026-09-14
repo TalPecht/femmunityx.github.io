@@ -1290,35 +1290,22 @@ h3 {
 
 .footer {
     padding: 50px 0;
-
     border-top: 1px solid var(--line);
 
     display: grid;
-
-    /* Give the logos enough actual space */
-    grid-template-columns: 180px 1fr auto;
-
+    grid-template-columns: 220px 1fr auto;
     gap: 35px;
-
     align-items: center;
 
     color: var(--muted);
     font-size: 0.82rem;
 }
 
-
-/* Institutional logos */
-
 .footer .footer-logo-line {
     display: block;
-
-    width: 170px;
-    max-width: none;
-
+    width: 210px;
+    max-width: 100%;
     height: auto;
-
-    object-fit: contain;
-    object-position: left center;
 }
 
 /* =========================================================
@@ -1457,7 +1444,7 @@ h3 {
 }
 
 .footer .footer-logo-line {
-    width: 650px;
+    width: 260px;
     max-width: 100%;
     height: auto;
 }
@@ -1597,12 +1584,12 @@ h3 {
 
 .footer {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 22px;
 }
 
 .footer .footer-logo-line {
-    width: 100%;
-    max-width: 420px;
+    width: 260px;
+    max-width: 100%;
     height: auto;
 }
 }
