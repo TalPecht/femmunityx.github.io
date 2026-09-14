@@ -1288,24 +1288,52 @@ h3 {
    FOOTER
    ========================================================= */
 
-.footer {
+..footer {
     padding: 50px 0;
     border-top: 1px solid var(--line);
 
     display: grid;
-    grid-template-columns: 220px 1fr auto;
-    gap: 35px;
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
     align-items: center;
 
     color: var(--muted);
     font-size: 0.82rem;
 }
 
-.footer .footer-logo-line {
+
+/* Footer logo group */
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.footer-logos img {
     display: block;
-    width: 210px;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* Individual logo sizes */
+
+.footer-logos .logo-femmunity {
+    height: 42px;
+}
+
+.footer-logos .logo-dzne {
+    height: 42px;
+}
+
+.footer-logos .logo-bonn {
+    height: 38px;
+}
+
+.footer-logos .logo-immuno {
+    height: 42px;
 }
 
 /* =========================================================
